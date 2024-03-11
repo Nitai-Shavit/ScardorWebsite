@@ -1,0 +1,17 @@
+.collapsing-button {
+    display: block;
+    border-width: 0;
+    background-color: rgba(58, 77, 117,0.3);
+    color: black;
+    font-size: 18px;
+    pointer-events:visible;
+    caret-color: transparent;
+}
+
+ 
+.collapsing-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+ 

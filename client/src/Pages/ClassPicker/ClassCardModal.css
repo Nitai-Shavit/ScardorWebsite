@@ -1,0 +1,44 @@
+.class-card {
+  height: 20rem; /* Adjusted to fixed unit */
+  width: 15rem; /* Adjusted to fixed unit */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centered content vertically */
+  align-items: center; /* Centered content horizontally */
+  color: rgb(234, 234, 9); /* Adjusted for better contrast */
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Added gradient for a modern look */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjusted shadow for subtlety */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures nothing spills out of the card */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for the hover effect */
+}
+
+.class-card:hover {
+  transform: scale(1.07); /* Slightly scale the card */
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6); /* Add a soft white glow around the card */
+}
+
+.class-card .class-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1; /* Ensures the title is above the image */
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 0.5rem 1rem; /* Some padding around the title */
+  border-radius: 5px; /* Rounded corners for the title background */
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+.class-card .background-img {
+  position: absolute; /* Positioned absolutely to be behind the title */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ensures the image covers the entire card */
+  height: 100%;
+  width: 100%;
+  opacity: 0.7; /* Reduced opacity for better title readability */
+}

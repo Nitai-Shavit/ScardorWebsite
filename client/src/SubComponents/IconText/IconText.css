@@ -1,0 +1,28 @@
+.icon-text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.icon-text-wrapper label {
+  height: 80%;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.icon-text-wrapper img {
+  object-fit: contain;
+  height: 100%;
+  width: 20%;
+}
+
+
+.icon-text-wrapper .content {
+  overflow: auto;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}

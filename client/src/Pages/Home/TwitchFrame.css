@@ -1,0 +1,26 @@
+.expand-container {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.expand-container .collapsed {
+    margin-left: -340px;
+    transition: all 0.5s;
+}
+
+.expand-container .expanded {
+    margin-left: 0%;
+    transition: all 0.5s;
+}
+
+.twitch-selector {
+    height: 100%;
+    width: 3%;
+    background-color: #9146FF;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}

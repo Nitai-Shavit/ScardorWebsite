@@ -1,0 +1,10 @@
+.Tab {
+    caret-color: transparent;
+}
+
+.media {
+    padding: 5px;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+}

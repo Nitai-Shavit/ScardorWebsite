@@ -1,0 +1,55 @@
+.youtube-media-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 72%;
+
+    
+}
+
+.youtube-current-video {
+    width: 100%;
+    min-width: 480px;
+    min-height: 270px;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 16/9;
+}
+
+.youtube-video-playlist {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.youtube-video-playlist .playlist-video {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(58, 77, 117,0.4);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.youtube-video-playlist .playlist-video .playlist-video-title {
+    text-overflow: ellipsis;
+}
+
+.youtube-video-playlist .playlist-video:hover {
+    background-color: rgba(58, 77, 117,0.1);
+}
+
+.youtube-selector {
+    height: 100%;
+    width: 3%;
+    background-color: #FF0000;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}

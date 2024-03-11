@@ -1,0 +1,61 @@
+.tags-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 1.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: max-height 0.1s linear;
+  border: 1px solid black;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tags-open {
+  max-height: 10%;
+}
+.tags-wrapper .title-wrapper {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tags-wrapper .tags-container {
+  height: 70%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.tags-wrapper .tags-container .tag {
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.tags-wrapper .tags-container .tag:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tags-wrapper .tags-container .included {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-height: 1100px) {
+  .tags-wrapper {
+    max-height: 2.5%;
+  }
+  .tags-open {
+    max-height: 10%;
+  }
+}

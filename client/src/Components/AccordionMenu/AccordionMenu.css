@@ -1,0 +1,31 @@
+.accordion-container {
+  width: 40%;
+  height: 30%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: gray;
+  overflow: hidden;
+}
+.accordion .title {
+  height: 10%;
+}
+.accordion .content {
+  transition: all 1s ease;
+  height: 0%;
+  max-height: 90%;
+  overflow: auto;
+}
+.accordion .show {
+  height: 90%;
+  transition: all 1s ease;
+  max-height: 90%;
+}

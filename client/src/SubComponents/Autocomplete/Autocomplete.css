@@ -1,0 +1,26 @@
+.autocomplete-wrapper {
+  align-self: center;
+  height: fit-content;
+  border: 1;
+}
+.autocomplete-wrapper .autocomplete-input {
+  width: 100%;
+}
+
+.autocomplete-wrapper .autocomplete-menu {
+  position: absolute;
+  border: 1px solid black;
+  background: white;
+  max-width: 50vh;
+  max-height: 30vh;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.autocomplete-wrapper .autocomplete-menu span:hover {
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

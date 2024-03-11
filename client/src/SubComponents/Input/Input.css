@@ -1,0 +1,13 @@
+.stylized-input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.stylized-input legend {
+  transition: all 0.2s ease-in-out;
+  padding: "0";
+}
+.stylized-input input {
+  border: none;
+  width: 100%;
+}
